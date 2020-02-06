@@ -1,0 +1,36 @@
+﻿<html>
+
+<head>
+<title>D3 Selections</title>
+</head>
+
+<body>
+<h1>D3 selections</h1>
+
+<p>This is the first paragraph</p>
+<p class="para2">This is the second paragraph</p>
+
+<button onclick="change1()">Change both paragraphs</button>
+<button onclick="change2()">Change second paragraph</button>
+<button onclick="change3()">Change the first paragraph</button>
+</body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script>
+
+function change1() {
+  d3.selectAll("p").text("All paragraph text has been changed");
+}
+
+function change2() {
+  d3.select(".para2").text("The second paragraph text has been changed");
+}
+
+function change3() {
+  d3.select("p").html("<i>We can add</i> <b>html</b> <i>tags with d3</i>");
+}
+
+</script>
+
+</html>
