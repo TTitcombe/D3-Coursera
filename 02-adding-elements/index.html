@@ -1,0 +1,39 @@
+﻿<html>
+
+<head>
+<title>Adding/Removing Elements</title>
+</head>
+
+<body>
+<h1>Adding and removing elements</h1>
+
+<button onclick="add()">Add a list item</button>
+<button onclick="removeAll()">Remove all list items</button>
+
+<ul id="itemlist">
+  <li>Element 1</li>
+</ul>
+
+</body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script>
+let itemList = d3.select("#itemlist")
+
+function count() {
+  return itemList.selectAll("li").size();
+}
+
+function add() {
+  let newCount = count() + 1;
+  itemList.append("li").text("Element " + newCount);
+}
+
+function removeAll() {
+  d3.selectAll("li").remove();
+}
+
+</script>
+
+</html>

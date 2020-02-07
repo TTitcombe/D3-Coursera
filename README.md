@@ -6,5 +6,7 @@ This repository contains examples of D3 visualisations created while following t
 Simply clone the repository and open any of the `index.html` files in a browser of your choice
 
 ## D3 examples
-* [`selections`](./selections)
+* [`selections`](./01-selections)
   - Simply demonstrations of selections and using `text` and `html` to alter the selection
+* [`adding/removing elements`](./02-adding-elements)
+  - Adds and removes elements
