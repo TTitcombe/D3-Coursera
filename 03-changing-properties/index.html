@@ -1,0 +1,35 @@
+﻿<html>
+
+<head>
+<title>Changing Properties</title>
+</head>
+
+<body>
+<h1>Changing Properties</h1>
+
+<h2 id="text">Some text to change</h2>
+
+<button onclick="changeColour()">Change text colour</button>
+
+</body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script>
+let theText = d3.select("#text");
+
+function changeColour() {
+  let colour = theText.style("color");
+
+  if (colour === "red") {
+    colour = "blue";
+  } else {
+    colour = "red";
+  }
+
+  theText.style("color", colour);
+}
+
+</script>
+
+</html>

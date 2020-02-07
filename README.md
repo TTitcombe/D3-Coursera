@@ -10,3 +10,5 @@ Simply clone the repository and open any of the `index.html` files in a browser 
   - Simply demonstrations of selections and using `text` and `html` to alter the selection
 * [`adding/removing elements`](./02-adding-elements)
   - Adds and removes elements
+* [`changing properties`](./03-changing-properties)
+  - Use `attr` and `style` to change an element's properties
