@@ -6,3 +6,12 @@ padding: 3px;
 margin: 1px;
 color: white;
 }
+
+#figure {
+  width: 320px;
+  border: 1px solid black;
+}
+
+#title {
+  text-align: center;
+}
