@@ -1,0 +1,53 @@
+﻿<html>
+
+<head>
+<title>Loading Data</title>
+</head>
+
+<body>
+<h1>Loading Data</h1>
+
+<ul id="container"></ul>
+
+</body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script>
+let container = d3.select("#container");
+
+
+d3.csv("clients.csv").then(function(data) {
+  let filtered_data = filterData(data);
+  showData(filtered_data);
+}).catch(function(error) {
+  write(error);
+})
+
+
+function showData(clients) {
+  for (let client of clients) {
+    write(client.Name);
+  }
+}
+
+function write(text) {
+  container.append("li").text(text);
+}
+
+function filterData(data) {
+  let filteredData = data.filter(e => {
+    return e.Age > 5;
+  });
+
+  filteredData.sort((a, b) => {
+    return d3.ascending(a.Name, b.Name);
+  });
+
+  return filteredData;
+}
+
+
+</script>
+
+</html>
