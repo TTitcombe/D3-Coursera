@@ -12,7 +12,9 @@ and type `python -m http.server`.
 This should provide a local host link;
 open it.
 
-## D3 examples
+## D3 Coursera examples
+Small D3 examples adapted from the Coursera course.
+These examples get progressively more complex.
 * [`selections`](./01-selections)
   - Simply demonstrations of selections and using `text` and `html` to alter the selection
 * [`adding/removing elements`](./02-adding-elements)
@@ -21,3 +23,8 @@ open it.
   - Use `attr` and `style` to change an element's properties
 * [`loading data`](./04-loading-data)
   - Load and read CSV data
+
+## Non Coursera examples
+D3 examples not inspired by the Coursera course
+* [`simple bar chart`](./simple_barchart)
+  - Inspired by Mike Bostock's ["Let's make a bar chart" tutorial](https://observablehq.com/@d3/lets-make-a-bar-chart)
