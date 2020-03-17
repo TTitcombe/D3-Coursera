@@ -23,6 +23,8 @@ These examples get progressively more complex.
   - Use `attr` and `style` to change an element's properties
 * [`loading data`](./04-loading-data)
   - Load and read CSV data
+* [`simple svg`](./05_svg)
+  - No D3, just simple SVG manipulation
 
 ## Non Coursera examples
 D3 examples not inspired by the Coursera course
