@@ -26,7 +26,9 @@ These examples get progressively more complex.
 * [`simple svg`](./05-svg)
   - No D3, just simple SVG manipulation
 * [`ordinal scales`](./06-ordinal-scales)
-  - Uses `scaleBand` to create a slope chart linking countries to their continents
+  - Uses `scaleBand` to create an SVG slope chart linking countries to their continents
+
+![Countries to continents. A chart created using ordinal scales.](./assets/ordinal-scales.png)
 
 ## Non Coursera examples
 D3 examples not inspired by the Coursera course
