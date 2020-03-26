@@ -1,5 +1,5 @@
 ﻿# D3 Examples
-This repository contains examples of D3 visualisations created while following the 
+This repository contains examples of D3 visualisations created while following the
 [NYU D3 visualisation coursera course](https://www.coursera.org/lecture/information-visualization-programming-d3js/introduction-to-d3-Fiduu)
 
 ## How to use
@@ -25,6 +25,8 @@ These examples get progressively more complex.
   - Load and read CSV data
 * [`simple svg`](./05-svg)
   - No D3, just simple SVG manipulation
+* [`ordinal scales`](./06-ordinal-scales)
+  - Uses `scaleBand` to create a slope chart linking countries to their continents
 
 ## Non Coursera examples
 D3 examples not inspired by the Coursera course
